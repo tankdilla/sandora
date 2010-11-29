@@ -1,0 +1,20 @@
+!!! 5
+%html
+	%head
+		= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"
+		= javascript_include_tag 'rails'
+		
+		%meta{:name => 'csrf-token', :content => form_authenticity_token}
+		%meta{:name => 'csrf-param', :content => 'authenticity_token'}
+		
+		%title
+			=page_title
+			
+		= stylesheet_link_tag 'layout'
+		= stylesheet_link_tag 'style'
+		
+		/[if lt IE 9]
+			= javascript_include_tag 'html5'
+	%body
+		= yield
+			

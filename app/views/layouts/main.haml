@@ -1,0 +1,31 @@
+!!! 5
+%html
+%head
+	= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"
+	= javascript_include_tag 'rails'
+	
+	%meta{:name => 'csrf-token', :content => form_authenticity_token}
+	%meta{:name => 'csrf-param', :content => 'authenticity_token'}
+	
+	%title
+		=page_title
+		
+	= stylesheet_link_tag 'layout'
+	= stylesheet_link_tag 'style'
+	
+	/[if lt IE 9]
+		= javascript_include_tag 'html5'
+%body
+	#page
+		#header
+			%h1= link_to 'Sandora', navigation_index_url
+		#middle
+			#sidebar
+				%p= link_to 'Menu', products_url
+				%p= link_to 'About Us', navigation_about_url
+				%p= link_to 'Contact Us', navigation_contact_url
+			#main
+				= yield
+		#footer
+			%p All Rights reserved.
+			

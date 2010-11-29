@@ -1,0 +1,56 @@
+
+body{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	background: #f2f2f2;
+}
+
+#header{
+	background-color: #FFFFFF;
+}
+
+#footer{
+	background-color: #FFFFFF;
+}
+
+#middle{
+	background-color: #FFFFFF;
+}
+
+#main{
+	background-color: #BFA760;
+}
+
+#footer{
+	text-align:center;
+}
+
+#footer p{
+	margin:0;
+}
+
+a{
+	color:#4d3900 ;
+	text-decoration:none;
+}
+
+a:visited{
+	color:#806f40 ;
+}
+
+a:hover{
+	color:#807940 ;
+	text-decoration:underline;
+}
+
+#button_nav_enter{
+	display: block;
+	width: 430px;
+	height: 20px;
+	background: url("/images/want_some.jpg") no-repeat 0 0;
+	}
+
+
+#button_nav_enter:hover{ 
+	background: url("/images/want_some_2.jpg") no-repeat 0 0;
+	}

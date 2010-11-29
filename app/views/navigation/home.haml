@@ -1,0 +1,28 @@
+
+#center-content
+	#content
+		
+		#logo
+			= image_tag("sandora_logo.jpg")
+		%p
+			/= link_to '', navigation_index_url, :id => 'button_nav_enter'
+		%p
+			by Mary and Darrell
+			%br
+			we sell delicious homemade monkey bread!
+			%br
+			a delicious holiday treat and a great gift
+			%br
+			contact us for orders: sandorafoods(at)gmail.com
+			%br
+			more to come soon!
+		.share_nav#home_share
+			%ul
+				%li#share follow
+				
+				%li#facebook
+					= link_to 'facebook', "http://www.facebook.com/", :target=>"_blank"
+				%li#twitter
+					= link_to 'twitter', "http://twitter.com/sandorafoods", :target=>"_blank"
+	#food_image_main
+		= image_tag("SDC11193_c.jpg")
