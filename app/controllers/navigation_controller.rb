@@ -3,5 +3,9 @@ class NavigationController < ApplicationController
 	
   def index
   end
+  
+  def home
+  	#layout 'application'
+  end
 
 end

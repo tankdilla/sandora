@@ -83,7 +83,4 @@ class ProductsController < ApplicationController
     end
   end
   
-  def order
-  	
-	end
 end
