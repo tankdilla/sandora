@@ -82,4 +82,8 @@ class ProductsController < ApplicationController
       format.xml  { head :ok }
     end
   end
+  
+  def order
+  	
+	end
 end

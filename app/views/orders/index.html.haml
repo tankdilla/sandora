@@ -1,0 +1,33 @@
+%h1 Listing orders
+
+%table
+  %tr
+    %th Name
+    %th Phone number
+    %th Alt phone number
+    %th Email
+    %th Recipient name
+    %th Recipient phone number
+    %th Gift ind
+    %th Gift message
+    %th
+    %th
+    %th
+
+  - @orders.each do |order|
+    %tr
+      %td= order.name
+      %td= order.phone_number
+      %td= order.alt_phone_number
+      %td= order.email
+      %td= order.recipient_name
+      %td= order.recipient_phone_number
+      %td= order.gift_ind
+      %td= order.gift_message
+      %td= link_to 'Show', order
+      %td= link_to 'Edit', edit_order_path(order)
+      %td= link_to 'Destroy', order, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Order', new_order_path

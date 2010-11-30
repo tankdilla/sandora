@@ -1,4 +1,10 @@
 SandoraMysql::Application.routes.draw do
+  resources :orders
+
+  resources :order_items
+
+  resources :quantity_types
+
   get "navigation/index"
   get "navigation/about"
   get "navigation/catering"

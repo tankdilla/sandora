@@ -1,0 +1,30 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @order.name
+%p
+  %b Phone number:
+  = @order.phone_number
+%p
+  %b Alt phone number:
+  = @order.alt_phone_number
+%p
+  %b Email:
+  = @order.email
+%p
+  %b Recipient name:
+  = @order.recipient_name
+%p
+  %b Recipient phone number:
+  = @order.recipient_phone_number
+%p
+  %b Gift ind:
+  = @order.gift_ind
+%p
+  %b Gift message:
+  = @order.gift_message
+
+= link_to 'Edit', edit_order_path(@order)
+\|
+= link_to 'Back', orders_path

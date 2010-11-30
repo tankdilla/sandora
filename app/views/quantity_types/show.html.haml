@@ -1,0 +1,9 @@
+%p#notice= notice
+
+%p
+  %b Description:
+  = @quantity_type.description
+
+= link_to 'Edit', edit_quantity_type_path(@quantity_type)
+\|
+= link_to 'Back', quantity_types_path
