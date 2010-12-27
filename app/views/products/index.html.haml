@@ -12,8 +12,10 @@
   - @products.each do |product|
     %tr
       %td= product.name
-      %td= product.price
-      %td= image_tag product.photo.url(:thumb)
+      %td 
+        $
+        = number_with_precision(product.price, :precision=>2)
+      / %td= image_tag product.photo.url(:thumb)
       %td= link_to 'Show', product
       %td= link_to 'Edit', edit_product_path(product)
       %td= link_to 'Destroy', product, :confirm => 'Are you sure?', :method => :delete

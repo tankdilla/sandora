@@ -7,13 +7,10 @@
   %b Description:
   = @product.description
 %p
-  %b Price:
-  = @product.price
+  %b Price: $
+  = number_with_precision(@product.price, :precision=>2)
 %p
-  %b Category:
-  = @product.category_id
-%p
-  = image_tag @user.photo.url
+  = image_tag @product.photo.url
 
 = link_to 'Edit', edit_product_path(@product)
 \|
