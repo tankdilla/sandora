@@ -41,3 +41,7 @@ group :cucumber do
   gem 'spork'
   gem 'launchy'
 end
+
+gem 'paperclip', :git => 'git://github.com/thoughtbot/paperclip.git'
+
+gem 'devise'

@@ -1,11 +1,11 @@
 class NavigationController < ApplicationController
-	#layout 'main'
+	layout 'main'
 	
   def index
   end
   
   def home
-  	#layout 'application'
+  	render :layout => 'application'
   end
 
 end

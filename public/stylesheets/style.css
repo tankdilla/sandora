@@ -6,19 +6,27 @@ body{
 }
 
 #header{
-	background-color: #FFFFFF;
+	background: #EBE4B5 url("../images/sandora_logo_header_2.jpg") top center no-repeat;
 }
 
 #footer{
-	background-color: #FFFFFF;
+	background-color: #EBE4B5;
 }
 
 #middle{
-	background-color: #FFFFFF;
+	background-color: #EBE4B5;
+}
+
+#middle #left_section{
+	background-color: #E1E4B5;
+}
+
+#middle #right_section{
+	background-color: #E1E4B5;
 }
 
 #main{
-	background-color: #BFA760;
+	background-color: #EBE4B5;
 }
 
 #footer{
@@ -54,3 +62,9 @@ a:hover{
 #button_nav_enter:hover{ 
 	background: url("/images/want_some_2.jpg") no-repeat 0 0;
 	}
+	
+#navlist li{
+display: inline;
+list-style-type: none;
+padding-right: 20px;
+}

@@ -18,14 +18,18 @@
 %body
 	#page
 		#header
-			%h1= link_to 'Sandora', navigation_index_url
+			
 		#middle
-			#sidebar
-				%p= link_to 'Menu', products_url
-				%p= link_to 'About Us', navigation_about_url
-				%p= link_to 'Contact Us', navigation_contact_url
+			#left_section
+			#topbar
+				#navcontainer
+					%ul#navlist
+						%li= link_to 'Menu', products_url
+						%li= link_to 'About Us', navigation_about_url
+						%li= link_to 'Contact Us', navigation_contact_url
 			#main
 				= yield
+			#right_section
 		#footer
 			%p All Rights reserved.
 			

@@ -13,8 +13,7 @@
   %b Category:
   = @product.category_id
 %p
-  %b Url:
-  = @product.url
+  = image_tag @user.photo.url
 
 = link_to 'Edit', edit_product_path(@product)
 \|

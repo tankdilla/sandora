@@ -11,8 +11,8 @@ development:
   reconnect: false
   database: sandora-mysql_development
   pool: 5
-  username: root
-  password: tank2010
+  username: sandora
+  password: sandora
   host: localhost
 
 # Warning: The database defined as "test" will be erased and

@@ -25,17 +25,27 @@ p, h2, h3, h4, h5, h6{
 }
 
 #middle{
-  width:850px;
+  width:100%;
   float:left;
 }
 
-#middle #sidebar{
-  width:206px;
-  float:left;
+#middle #left_section{
+	width:100px;
+	height: 100%;
+}
+
+#middle #right_section{
+	width:100px;
+	height: 100%;
+}
+
+#middle #topbar{
+  width:700px;
+  height:50px;
 }
 
 #middle #main{
-  width:594px;
+  width:700px;
   height:600px;
   float:left;
 }
