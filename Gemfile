@@ -21,4 +21,6 @@ end
 
 gem 'paperclip'#, :git => 'git://github.com/thoughtbot/paperclip.git'
 
+gem 'hpricot'
+gem 'ruby_parser'
 gem 'devise'
