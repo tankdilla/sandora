@@ -4,7 +4,7 @@ module ApplicationHelper
 	end
 	
 	def authorized_link_to(name, options={}, html_options={})
-		if current_user && current_user.admin == 1
+		if current_user && current_user.admin
 			link_to name, options, html_options
 		else
 			''

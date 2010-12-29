@@ -19,8 +19,9 @@
     %br
     = f.text_field :price
   .field
-    = f.label :photo
-    %br
-    = f.file_field :photo
+    -if params[:action] == 'new'
+      = f.label :photo
+      %br
+      = f.file_field :photo
   .actions
     = f.submit 'Save'
