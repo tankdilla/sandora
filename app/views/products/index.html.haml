@@ -1,6 +1,5 @@
-%h1 Listing products
 
-%table
+%table.center
   %tr
     %th Name
     %th Price
@@ -10,15 +9,14 @@
     %th
 
   - @products.each do |product|
-    %tr
-      %td= product.name
+    %tr.product_row
+      %td= link_to product.name, product
       %td 
         $
         = number_with_precision(product.price, :precision=>2)
-      / %td= image_tag product.photo.url(:thumb)
-      %td= link_to 'Show', product
-      %td= link_to 'Edit', edit_product_path(product)
-      %td= link_to 'Destroy', product, :confirm => 'Are you sure?', :method => :delete
+      %td= image_tag product.photo.url(:thumb)
+      / %td= link_to 'Edit', edit_product_path(product)
+      / %td= link_to 'Destroy', product, :confirm => 'Are you sure?', :method => :delete
 
 %br
 

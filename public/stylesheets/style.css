@@ -6,9 +6,15 @@ body{
 }
 
 #header{
+}
+
+#header #header_logo{
 	background: #EBE4B5 url("../images/sandora_logo_header_2.jpg") top center no-repeat;
 }
 
+#header #user_nav{
+}
+-
 #footer{
 	background-color: #EBE4B5;
 }
@@ -62,9 +68,4 @@ a:hover{
 #button_nav_enter:hover{ 
 	background: url("/images/want_some_2.jpg") no-repeat 0 0;
 	}
-	
-#navlist li{
-display: inline;
-list-style-type: none;
-padding-right: 20px;
-}
+

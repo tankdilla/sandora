@@ -18,18 +18,33 @@
 %body
 	#page
 		#header
-			
+			#header_logo
+			#user_nav
+				-if user_signed_in?
+					Signed in as 
+					= current_user.email
+					Not you? 
+					= link_to "Sign out", destroy_user_session_path
+				-else
+					= link_to "Sign up", new_user_registration_path
+					or 
+					= link_to "Sign in", new_user_session_path	
 		#middle
-			#left_section
 			#topbar
 				#navcontainer
+				
 					%ul#navlist
 						%li= link_to 'Menu', products_url
 						%li= link_to 'About Us', navigation_about_url
 						%li= link_to 'Contact Us', navigation_contact_url
 			#main
+				
+				%p
+					.notice
+						= notice
+				%p
+					.alert
+						= alert
 				= yield
-			#right_section
 		#footer
 			%p All Rights reserved.
-			

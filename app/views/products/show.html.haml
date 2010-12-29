@@ -10,7 +10,7 @@
   %b Price: $
   = number_with_precision(@product.price, :precision=>2)
 %p
-  = image_tag @product.photo.url
+  = image_tag @product.photo.url(:small)
 
 = link_to 'Edit', edit_product_path(@product)
 \|

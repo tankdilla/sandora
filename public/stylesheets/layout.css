@@ -9,15 +9,28 @@ p, h2, h3, h4, h5, h6{
 }
 
 #page{
-  display:inline;
+  display:block;
   width:900px;
   margin: 0px auto;
 }
 
 #header{
-  height:108px;
+  height:138px;
   width:100%;
 }
+
+	#header #header_logo{
+		height:100%;
+		width:700px;
+	  float:left;
+	}
+
+	#header #user_nav{
+		width:164px;
+		float:right;
+		text-align: right;
+		margin-right: 36px;
+	}
 
 #footer{
   height:36px;
@@ -26,34 +39,32 @@ p, h2, h3, h4, h5, h6{
 
 #middle{
   width:100%;
-  float:left;
 }
 
-#middle #left_section{
-	width:100px;
-	height: 100%;
+	#middle #topbar{
+		width:100%;
+		height:50px;
+	}
+
+	#middle #main{
+		width:100%;
+		height:600px;
+	}
+
+.center{
+	margin-left:auto;
+	margin-right:auto;
 }
 
-#middle #right_section{
-	width:100px;
-	height: 100%;
+ul#navlist {
+	width:300px;
+	float:right;
 }
 
-#middle #topbar{
-  width:700px;
-  height:50px;
-}
-
-#middle #main{
-  width:700px;
-  height:600px;
-  float:left;
-}
-
-#nav-links{
-  margin-left:18px;
-  margin-right:18px;
-  margin-top:18px;
+#navlist li{
+	display: inline;
+	list-style-type: none;
+	padding-right: 20px;
 }
 
 #food_image_main{
