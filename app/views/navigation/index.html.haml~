@@ -2,5 +2,8 @@
 	= image_tag("SDC11193_h.jpg")
 %p#one_roll
 	= image_tag("one_cinn_roll.jpg")
-%p.index_image
+%p
+%p
+%p
+%p
 	= image_tag("homepage_text_2.jpg")

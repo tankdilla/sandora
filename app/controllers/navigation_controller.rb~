@@ -1,5 +1,5 @@
 class NavigationController < ApplicationController
-	layout 'main2'
+	layout 'main'
 	
   def index
   end

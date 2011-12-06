@@ -1,3 +1,3 @@
-%p#about_us_img.index_image
+%p#about_us_img
 	= image_tag("me_and_mary.JPG")
 %p Sandora Foods was created by Mary and Darrell Johnson.  We love to cook delicious food, and we hope that you will love our food and come back for more!

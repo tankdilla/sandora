@@ -1,0 +1,136 @@
+
+body{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	background: #EBDF81;
+}
+
+#left_bar{
+	background: #EBE5B5
+}
+
+#left_bar #logo{
+	background: #EBE5B5 url("../images/sflogo.JPG") top left no-repeat;
+}
+
+#top_bar{
+	background: #EBE5B5
+}
+-
+#footer{
+	text-align:center;
+	background-color: #EBE5B5;
+}
+
+#footer p{
+	margin:0;
+}
+
+a{
+	color:#4d3900 ;
+	text-decoration:none;
+}
+
+a:visited{
+	color:#806f40 ;
+}
+
+a:hover{
+	color:#807940 ;
+	text-decoration:underline;
+}
+
+#button_nav_enter{
+	display: block;
+	width: 430px;
+	height: 20px;
+	background: url("/images/want_some.jpg") no-repeat 0 0;
+}
+
+
+#button_nav_enter:hover{ 
+	background: url("/images/want_some_2.jpg") no-repeat 0 0;
+}
+
+#button_home{
+	display: block;
+	width: 120px;
+	height: 50px;
+	background: url("/images/home.jpg") no-repeat 0 0;
+	margin-left: 50px;
+}
+
+
+#button_home:hover{ 
+	background: url("/images/home_over.jpg") no-repeat 0 0;
+	margin-left: 50px;
+}
+	
+#button_about{
+	display: block;
+	width: 120px;
+	height: 50px;
+	background: url("/images/about_us.jpg") no-repeat 0 0;
+	margin-left: 50px;
+}
+
+
+#button_about:hover{ 
+	background: url("/images/about_us_over.jpg") no-repeat 0 0;
+	margin-left: 50px;
+}
+
+#button_menu{
+	display: block;
+	width: 120px;
+	height: 50px;
+	background: url("/images/menu.jpg") no-repeat 0 0;
+	margin-left: 50px;
+}
+
+
+#button_menu:hover{ 
+	background: url("/images/menu_over.jpg") no-repeat 0 0;
+	margin-left: 50px;
+}
+
+#button_contact_us{
+	display: block;
+	width: 120px;
+	height: 50px;
+	background: url("/images/contact_us.jpg") no-repeat 0 0;
+	margin-left: 50px;
+}
+
+
+#button_contact_us:hover{ 
+	background: url("/images/contact_us_over.jpg") no-repeat 0 0;
+	margin-left: 50px;
+}
+
+#index_bread_img{
+	border-style:groove;
+	border-width:2px;
+	width:279px;
+	height:225px;
+	float:left;
+}
+
+#one_roll{
+	border-style:groove;
+	border-width:2px;
+	width:300px;
+	height:168px;
+	float:left;
+	margin-left:50px;
+	margin-bottom:90px;
+	margin-top:100px;
+}
+
+#about_us_img{
+	border-style:groove;
+	border-width:3px;
+	width:550px;
+	height:310px;
+}
+
