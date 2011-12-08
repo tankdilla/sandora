@@ -1,23 +1,27 @@
 
-%table.center
-  %tr
-    %th Name
-    %th Price
-    %th 
-    %th
-    %th
-    %th
-
+%table#product_listing
   - @products.each do |product|
     %tr.product_row
-      %td= link_to product.name, product
-      %td 
-        $
-        = number_with_precision(product.price, :precision=>2)
-      %td= image_tag product.photo.url(:thumb)
+	  %td.table_product_pic
+	    = image_tag product.photo.url(:thumb)
+	  %br
+	  product.name
+	  /add conditional here to get to the show page. conditional based on authorized user; = link_to product.name, product
+      %td
+		%table.product_pane
+          %tr
+            %td.product_description
+              = @product.description
+		  %tr
+		    %td.product_price
+			  $
+              = number_with_precision(product.price, :precision=>2)
+          %tr
+		    %td
+			  /add to cart
+    %tr.line_seperator  
       / %td= link_to 'Edit', edit_product_path(product)
       / %td= link_to 'Destroy', product, :confirm => 'Are you sure?', :method => :delete
-
 %br
 
 = authorized_link_to 'New Product', new_product_path if current_user

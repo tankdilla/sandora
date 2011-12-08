@@ -70,11 +70,17 @@ p, h2, h3, h4, h5, h6{
 /*	padding-left: 50px;*/
 	margin-left:100px;		
 }
+
 .float_left{
 	float:left;
 }
+
 .float_right{
 	float:right;
+}
+
+.line_separator{
+ border-bottom: 1px dotted silver;
 }
 
 ul#navlist {
