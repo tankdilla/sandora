@@ -73,7 +73,7 @@ p, h2, h3, h4, h5, h6{
 .float_left{
 	float:left;
 }
-.float_left{
+.float_right{
 	float:right;
 }
 

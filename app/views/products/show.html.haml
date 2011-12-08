@@ -13,5 +13,8 @@
   = image_tag @product.photo.url(:small)
 
 = authorized_link_to 'Edit', edit_product_path(@product)
-\|
-= link_to 'Back', products_path
+/|
+= authorized_link_to 'Destroy', @product, :confirm => 'Are you sure?', :method => :delete
+/|
+%p
+  = link_to 'Back', products_path
