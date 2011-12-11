@@ -1,7 +1,8 @@
-Hello Mary and Darrell,
-
-You have received a comment from
-= "#{@comment.first_name} #{@comment.last_name} at #{@comment.email_address}."
-
-Their comment reads: 
-= @comment.comment
+%p
+	Hello Mary and Darrell,
+%p
+	You have received a comment from
+	= "#{@comment.first_name} #{@comment.last_name} at #{@comment.email_address}."
+%p
+	Their comment reads: 
+	= @comment.comment
