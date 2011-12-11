@@ -1,5 +1,5 @@
 class CommentsController < ApplicationController
-	before_filter :authenticate_user!, :except=>[:new] 
+	before_filter :authenticate_user!, :except=>[:new, :create] 
   layout 'main2'
   
   def index
@@ -45,7 +45,7 @@ class CommentsController < ApplicationController
 
     respond_to do |format|
       if @comment.save
-        format.html { redirect_to(@comment, :notice => 'Comment was successfully created.') }
+        format.html { redirect_to(products_url, :notice => 'Comment was successfully created.') }
         format.xml  { render :xml => @comment, :status => :created, :location => @comment }
       else
         format.html { render :action => "new" }
