@@ -1,23 +1,25 @@
-
-%table.center
-  %tr
-    %th Name
-    %th Price
-    %th 
-    %th
-    %th
-    %th
-
-  - @products.each do |product|
-    %tr.product_row
-      %td= link_to product.name, product
-      %td 
-        $
-        = number_with_precision(product.price, :precision=>2)
-      %td= image_tag product.photo.url(:thumb)
-      / %td= link_to 'Edit', edit_product_path(product)
-      %td= link_to 'Destroy', product, :confirm => 'Are you sure?', :method => :delete
-
-%br
+%table#product_listing{:style=>'width:100%;'}
+	- @products.each do |product|
+		%tr.product_row
+			%td.table_product_pic
+				= link_to image_tag(product.photo.url(:small)), product
+				/	  add conditional here to get to the show page. conditional based on authorized user; = link_to product.name, product
+			%td
+				%table.product_pane{:style=>'width:75%;'}
+					%tr
+						%td.product_description{:align=>'right'}
+							= link_to product.name, product
+							%br
+							= product.description
+					%tr
+						%td.numeric
+							$
+							= number_with_precision(product.price, :precision=>2)
+					%tr
+						%td{:align=>'right'}
+							/add to cart
+		%tr.line_separator{:colspan => 2}  
+			/%td= link_to 'Edit', edit_product_path(product)
+			/%td= link_to 'Destroy', product, :confirm => 'Are you sure?', :method => :delete
 
 = authorized_link_to 'New Product', new_product_path if current_user

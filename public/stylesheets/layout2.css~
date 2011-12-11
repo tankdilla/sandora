@@ -48,7 +48,7 @@ p, h2, h3, h4, h5, h6{
 #user_nav{
 	text-align: right;
 	margin-right: 136px;
-	display:none;
+/*	display:none;*/
 	
 }
 
@@ -70,11 +70,24 @@ p, h2, h3, h4, h5, h6{
 /*	padding-left: 50px;*/
 	margin-left:100px;		
 }
+
 .float_left{
 	float:left;
 }
+
 .float_right{
 	float:right;
+}
+
+.line_separator{
+ border-bottom: 1px dotted silver;
+ font-size: 1px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px;
+}
+
+.numeric{
+ text-align:right;
 }
 
 ul#navlist {

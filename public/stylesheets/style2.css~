@@ -1,7 +1,7 @@
 
 body{
 	font-family:Arial, Helvetica, sans-serif;
-	font-size:12px;
+	font-size:14px;
 	background: #EBDF81;
 }
 
@@ -27,12 +27,12 @@ body{
 }
 
 a{
-	color:#4d3900 ;
+	color:#998c2a ;
 	text-decoration:none;
 }
 
 a:visited{
-	color:#806f40 ;
+	color:#e7f280 ;
 }
 
 a:hover{
@@ -109,8 +109,8 @@ a:hover{
 }
 
 #index_bread_img{
-	border-style:groove;
-	border-width:2px;
+/*	border-style:groove;*/
+/*	border-width:2px;*/
 	width:279px;
 	height:225px;
 	float:left;
@@ -123,7 +123,7 @@ a:hover{
 	height:168px;
 	float:left;
 	margin-left:50px;
-	margin-bottom:90px;
+	margin-bottom:50px;
 	margin-top:100px;
 }
 

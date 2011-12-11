@@ -1,7 +1,7 @@
 
 body{
 	font-family:Arial, Helvetica, sans-serif;
-	font-size:12px;
+	font-size:14px;
 	background: #EBDF81;
 }
 
@@ -27,16 +27,16 @@ body{
 }
 
 a{
-	color:#4d3900 ;
+	color:#998c2a;
 	text-decoration:none;
 }
 
 a:visited{
-	color:#806f40 ;
+	color:#b0aa75;
 }
 
 a:hover{
-	color:#807940 ;
+	color:#807940;
 	text-decoration:underline;
 }
 
@@ -109,8 +109,8 @@ a:hover{
 }
 
 #index_bread_img{
-	border-style:groove;
-	border-width:2px;
+/*	border-style:groove;*/
+/*	border-width:2px;*/
 	width:279px;
 	height:225px;
 	float:left;
