@@ -27,16 +27,16 @@ body{
 }
 
 a{
-	color:#998c2a ;
+	color:#998c2a;
 	text-decoration:none;
 }
 
 a:visited{
-	color:#e7f280 ;
+	color:#b0aa75;
 }
 
 a:hover{
-	color:#807940 ;
+	color:#807940;
 	text-decoration:underline;
 }
 

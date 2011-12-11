@@ -53,7 +53,7 @@ p, h2, h3, h4, h5, h6{
 }
 
 #main_area{
-
+	margin-left: 50px;
 }
 
 #footer{
@@ -68,7 +68,7 @@ p, h2, h3, h4, h5, h6{
 
 .index_image{
 /*	padding-left: 50px;*/
-	margin-left:100px;		
+	margin-left:50px;		
 }
 
 .float_left{
@@ -113,6 +113,28 @@ ul#navlist {
 	margin-left: auto;
 	margin-right: auto;
 	background: #EBE4B5;
+}
+
+#index_bread_img{
+/*	border-style:groove;*/
+/*	border-width:2px;*/
+	width:279px;
+	height:225px;
+	float:left;
+}
+
+#one_roll{
+	border-style:groove;
+	border-width:2px;
+	width:300px;
+	height:168px;
+	float:left;
+	margin-left:50px;
+	margin-bottom:50px;
+	margin-top:100px;
+}
+
+#homepage_text{
 }
 
 #content {
