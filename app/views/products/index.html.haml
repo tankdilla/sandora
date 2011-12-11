@@ -22,4 +22,5 @@
 			/%td= link_to 'Edit', edit_product_path(product)
 			/%td= link_to 'Destroy', product, :confirm => 'Are you sure?', :method => :delete
 
+
 = authorized_link_to 'New Product', new_product_path if current_user
